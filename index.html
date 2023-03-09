@@ -10,8 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'slide': 'slide 5s linear infinite',
+                    },
+                    keyframes: {
+                        slide: {
+                            '0%, 100%': {
+                                'margin-top': '-270px',
+                            },
+                            '5%, 33%': {
+                                'margin-top': '-180px',
+                            },
+                            '38%, 66%': {
+                                'margin-top': '-90px',
+                            },
+                            '71%, 99.99%': {
+                                'margin-top': '0px'
+                            }
+                        },
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 <!-- 
     bg: #1B262C
@@ -19,48 +45,74 @@
     secondary: #3282B8
     text: #BBE1FA
  -->
+<!-- <img src="https://drive.google.com/uc?export=view&id=1EwVTXy2yGqO4SCbfv4g4kW1thIIUS-4A" alt="business problems?"> -->
 
 <body class="bg-[#1B262C]">
     <header>
-        <nav class="w-full items-center align-middle shadow-lg bg-[#0F4C75] sticky top-0 z-50 text-[#BBE1FA] mb-3">
+        <nav class="w-full items-center align-middle shadow-lg bg-[#0F4C75] fixed sticky top-0 z-50 text-[#BBE1FA]">
             <div class="py-3 mx-auto w-4/5 flex justify-between">
                 <div class="flex align-middle items-center">
-                    <h1 class="font-[Poppins] font-bold text-2xl">Website1</h1>
+                    <h1 class="font-[Poppins] font-bold text-2xl">Company LTD.</h1>
                 </div>
                 <ul class="flex align-middle items-center font-[Poppins]">
                     <li class="px-3 py-2 group">
-                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5" href="#">Home</a>
+                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5"
+                            href="#home">Home</a>
                         <p class="block max-w-0 group-hover:max-w-full transition-all duration-100 h-0.5 bg-white"></p>
                     </li>
                     <li class="px-3 py-2 group">
-                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5" href="#">Educations</a>
+                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5"
+                            href="#about">About</a>
                         <p class="block max-w-0 group-hover:max-w-full transition-all duration-100 h-0.5 bg-white"></p>
                     </li>
                     <li class="px-3 py-2 group">
-                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5" href="#">Skills</a>
-                        <p class="block max-w-0 group-hover:max-w-full transition-all duration-100 h-0.5 bg-white"></p>
-                    </li>
-                    <li class="px-3 py-2 group">
-                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5" href="#">Contacts</a>
+                        <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5"
+                            href="#contacts">Contacts</a>
                         <p class="block max-w-0 group-hover:max-w-full transition-all duration-100 h-0.5 bg-white"></p>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="relative w-full h-screen">
-        <section class="w-4/5 mx-auto h-screen">
-            <div class="w-40 h-60 mx-auto rounded bg-white">
-                Welcome
+    <main class="relative w-full h-full">
+        <section class="flex justify-center items-center align-middle w-full h-screen bg-gray-200">
+            <div class="flex w-1/2 h-1/2 mx-auto rounded-md bg-white">
+                <img src="https://drive.google.com/uc?export=view&id=1EwVTXy2yGqO4SCbfv4g4kW1thIIUS-4A" alt="business problems?">
+                <div class="my-5">
+                    <h1 class="font-bold text-3xl text-[#0F4C75] group">
+                        Company LTD.
+                        <p class="bloc max-w-0 group-hover:max-w-full transition-all duratioan-100 h-0.5 bg-white"></p>
+                    </h1>
+                    <div class="text-gray-500 text-2xl text-center font-bold flex flex-col justify-around">
+                        <span>Your One Stop for</span>
+                        <div class="overflow-hidden h-16">
+                            <div class="animate-slide"><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-[#0F4C75]">Your IT Solutions</span></div>
+                            <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-green-500">Web Development</span></div>
+                            <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-blue-500">Web Design</span></div>
+                        </div>
+                        <span>Awesome!</span>
+                    </div>
+                    <div class="mt-10 w-full flex items-center align-middle">
+                        <a class="px-5 py-2 bg-[#0F4C75] text-[#BBE1FA] hover:text-[#0F4C75] hover:bg-[#BBE1FA] border hover:border-[#0F4C75] rounded-full" href="#services">Find out more</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="w-3/5 mx-auto bg-white h-screen">
-            About
+            <div id="about">
+                About Us
+            </div>
+            <div id="services">
+                Services
+            </div>
         </section>
         <section class="w-3/5 mx-auto bg-white h-screen">
             Contacts
         </section>
     </main>
+    <footer class="w-full mx-auto h-60 bg-[#1B262C]">
+        Footer
+    </footer>
 </body>
 
 </html>
