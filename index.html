@@ -75,13 +75,12 @@
         </nav>
     </header>
     <main class="relative w-full h-full">
-        <section class="flex justify-center items-center align-middle w-full h-screen bg-gray-200">
-            <div class="flex w-1/2 h-1/2 mx-auto rounded-md bg-white">
-                <img src="https://drive.google.com/uc?export=view&id=1EwVTXy2yGqO4SCbfv4g4kW1thIIUS-4A" alt="business problems?">
+        <section class="flex items-center w-full h-screen bg-gray-200">
+            <div class="flex justify-around w-1/2 h-1/2 mx-auto my-5 rounded-3xl bg-white">
+                <img class="w-1/2 h-auto" src="./imgs/home.svg" alt="business problems?">
                 <div class="my-5">
-                    <h1 class="font-bold text-3xl text-[#0F4C75] group">
-                        Company LTD.
-                        <p class="bloc max-w-0 group-hover:max-w-full transition-all duratioan-100 h-0.5 bg-white"></p>
+                    <h1 class="font-bold text-3xl text-[#0F4C75] text-center">
+                        Welcome
                     </h1>
                     <div class="text-gray-500 text-2xl text-center font-bold flex flex-col justify-around">
                         <span>Your One Stop for</span>
@@ -90,7 +89,7 @@
                             <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-green-500">Web Development</span></div>
                             <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-blue-500">Web Design</span></div>
                         </div>
-                        <span>Awesome!</span>
+                        <span>Company LTD.</span>
                     </div>
                     <div class="mt-10 w-full flex items-center align-middle">
                         <a class="px-5 py-2 bg-[#0F4C75] text-[#BBE1FA] hover:text-[#0F4C75] hover:bg-[#BBE1FA] border hover:border-[#0F4C75] rounded-full" href="#services">Find out more</a>
@@ -98,20 +97,77 @@
                 </div>
             </div>
         </section>
-        <section class="w-3/5 mx-auto bg-white h-screen">
-            <div id="about">
-                About Us
+        <section class="w-3/5 mx-auto bg-gray-200 h-screen">
+            <div id="about" class="flex flex-col items-center justify-around align-middle w-4/5 mx-auto">
+                <h1 class="font-bold text-3xl font-[Poppins] underline text-center mt-5">About Us</h1>
+                <p class="text-md mt-5 font-sans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde facere error soluta iure sint blanditiis explicabo temporibus id? Nihil quos at dolorum perspiciatis maiores omnis? Rem saepe voluptatem illum eveniet.</p>
             </div>
-            <div id="services">
-                Services
+            <div id="services" class="mt-5">
+                <h1 class="text-center font-bold text-3xl underline mb-10">What We Can Do For You</h1>
+                <div class="w-3/5 h-3/5 mx-auto my-5">
+                    <div class="flex justify-evently">
+                        <img class="px-2 py-2 h-64 w-full bg-white rounded mr-10 shadow-lg" src="./imgs/service_1.svg" alt="Web Design">
+                        
+                        <div class="flex flex-col">
+                            <h1 class="font-[Poppins] font-bold text-3xl underline">Design Your Website Ideas</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit dolore quasi sapiente tempora, magni suscipit itaque nisi voluptatum sit officiis consequuntur voluptate alias laborum dicta ipsam recusandae, voluptatibus aliquam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-3/5 h-3/5 mx-auto my-5">
+                    <div class="flex justify-evently">
+                        <div class="flex flex-col">
+                            <h1 class="font-[Poppins] font-bold text-3xl underline">Create The Website That You Dream off</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit dolore quasi sapiente tempora, magni suscipit itaque nisi voluptatum sit officiis consequuntur voluptate alias laborum dicta ipsam recusandae, voluptatibus aliquam.</p>
+                        </div>
+                        <img class="px-2 py-2 h-64 w-full bg-white rounded ml-10 shadow-lg" src="./imgs/service_2.svg" alt="Web Development">
+                    </div>
+                </div>
+                <div class="w-3/5 h-3/5 mx-auto my-5">
+                    <div class="flex justify-evently">
+                        <img class="px-2 py-2 h-64 w-full bg-white rounded mr-10 shadow-lg" src="./imgs/service_3.svg" alt="Maintenance">
+                        <div class="flex flex-col">
+                            <h1 class="font-[Poppins] font-bold text-3xl underline">Maintain Your Website Functionalities</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit dolore quasi sapiente tempora, magni suscipit itaque nisi voluptatum sit officiis consequuntur voluptate alias laborum dicta ipsam recusandae, voluptatibus aliquam.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="w-3/5 mx-auto bg-white h-screen">
-            Contacts
+        <section class="w-3/5 mx-auto bg-white h-screen" id="contacts">
+            <div class="pt-40">
+                Contacts
+            </div>
         </section>
     </main>
-    <footer class="w-full mx-auto h-60 bg-[#1B262C]">
-        Footer
+    <footer class="w-full mx-auto h-60 bg-[#0F4C75]">
+        <div class="flex w-3/5 mx-auto justify-between pt-5">
+            <div class="">
+                <h1 class="text-[#BBE1FA] font-bold text-3xl text-center cursor-pointer">
+                    Company LTD.
+                    <span class="block max-w-full bg-white h-0.5"></span>
+                </h1>
+                <p class="text-semibold text-md text-[#BBE1FA]">
+                    Building ABC,<br /> Street 123,<br /> Country
+                </p>
+            </div>
+            <div class="">
+                <ul class="text-[#BBE1FA] text-2xl font-['Poppins']">
+                    <li class="group">
+                        <a href="#home" class="group-hover:text-white">Home</a>
+                        <p class="block max-w-0 group-hover:max-w-full h-0.5 bg-white transition-all duration-100"></p>
+                    </li>
+                    <li class="group">
+                        <a href="#about" class="group-hover:text-white">About Us</a>
+                        <p class="block max-w-0 group-hover:max-w-full h-0.5 bg-white transition-all duration-100"></p>
+                    </li>
+                    <li class="group">
+                        <a href="#contacts" class="group-hover:text-white">Contacts</a>
+                        <p class="block max-w-0 group-hover:max-w-full h-0.5 bg-white transition-all duration-100"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 
