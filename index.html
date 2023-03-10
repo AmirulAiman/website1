@@ -8,8 +8,8 @@
     <title>Website1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -45,19 +45,23 @@
     secondary: #3282B8
     text: #BBE1FA
  -->
-<!-- <img src="https://drive.google.com/uc?export=view&id=1EwVTXy2yGqO4SCbfv4g4kW1thIIUS-4A" alt="business problems?"> -->
-
 <body class="bg-[#1B262C]">
     <header id="home">
         <nav class="w-full items-center align-middle shadow-lg bg-[#0F4C75] fixed sticky top-0 z-50 text-[#BBE1FA]">
-            <div class="py-3 mx-auto w-4/5 flex justify-between">
+            <div class="py-3 mx-auto w-1/2 md:w-4/5 flex justify-center md:justify-between">
                 <div class="flex align-middle items-center">
                     <h1 class="font-[Poppins] font-bold text-2xl cursor-pointer group hover:text-white">
                         Company LTD.
                         <p class="max-w-0 group-hover:max-w-full h-0.5 bg-white transition-all duration-200"></p>
                     </h1>
+                    <button 
+                        class="mx-5 text-3xl text-[#BBE1FA] font-[Poppins] md:hidden cursor-pointer hover:text-white"
+                        type="button"
+                    >
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </button>
                 </div>
-                <ul class="flex align-middle items-center font-[Poppins]">
+                <ul class="hidden md:flex align-middle items-center font-[Poppins]">
                     <li class="px-3 py-2 group">
                         <a class="font-semibold text-xl cursor-pointer group-hover:text-white trasition-color duration-0.5"
                             href="#home">Home</a>
@@ -82,31 +86,38 @@
             class="flex flex-col justify-around items-center w-screen h-screen bg-gray-200 bg-cover bg-fixed" 
             style="background-image: url('./imgs/home-bg.jpg')"
         >
-            <div class="flex justify-around w-1/2 h-1/2 mx-auto my-5 rounded-3xl bg-gray-200">
-                <img class="w-1/2 h-auto" src="./imgs/home.svg" alt="business problems?">
-                <div class="my-5">
-                    <h1 class="font-bold text-3xl text-[#0F4C75] text-center">
+            <div class="flex justify-around w-4/5 md:w-1/2 md:h-1/2 mx-auto my-5 rounded-3xl bg-gray-200">
+                <img class="hidden md:block w-full md:w-1/2 md:h-1/2 m-auto" src="./imgs/home.svg" alt="business problems?">
+                <div class="my-5 md:mx-2">
+                    <h1 class="font-semibold md:font-bold text-2xl md:text-3xl text-[#0F4C75] text-center">
                         Welcome
                     </h1>
-                    <div class="text-gray-500 text-2xl text-center font-bold flex flex-col justify-around">
+                    <div class="text-gray-500 text-2xl text-center font-bold flex flex-col md:justify-around">
                         <span>Your One Stop for</span>
                         <div class="overflow-hidden h-16">
-                            <div class="animate-slide"><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-[#0F4C75]">Your IT Solutions</span></div>
-                            <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-green-500">Web Development</span></div>
-                            <div class=""><span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-blue-500">Web Design</span></div>
+                            <div class="animate-slide">
+                                <span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-[#0F4C75]">Your IT Solutions</span>
+                            </div>
+                            <div class="">
+                                <span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-green-500">Web Development</span>
+                            </div>
+                            <div class="">
+                                <span class="inline-block text-white py-2 px-3 mt-1 mb-11 bg-blue-500">Web Design</span>
+                            </div>
                         </div>
                         <span>Company LTD.</span>
                     </div>
-                    <div class="mt-10 w-full flex items-center align-middle">
+                    <div class="mt-10 w-full md:flex items-center align-middle">
                         <a class="px-5 py-2 bg-[#0F4C75] text-[#BBE1FA] hover:text-[#0F4C75] hover:bg-[#BBE1FA] border hover:border-[#0F4C75] rounded-full" href="#services">Find out more</a>
                     </div>
                 </div>
             </div>
-            <div
+            <button 
+                type="button"
                 class="rounded-full border border-[#0F4C75] bg-[#BBE1FA] px-5 py-5 font-bold text-3xl text-[#0F4C75] animate-bounce w-6 h-6 cursor-pointer bg-cover bg-no-repeat"
-                style="background-image: url('./imgs/down-arrow.png')"
             >
-            </div>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
         </section>
         <section class="w-3/5 mx-auto bg-gray-200 h-screen">
             <div id="about" class="flex flex-col items-center justify-around align-middle w-4/5 mx-auto">
