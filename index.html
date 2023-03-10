@@ -48,11 +48,14 @@
 <!-- <img src="https://drive.google.com/uc?export=view&id=1EwVTXy2yGqO4SCbfv4g4kW1thIIUS-4A" alt="business problems?"> -->
 
 <body class="bg-[#1B262C]">
-    <header>
+    <header id="home">
         <nav class="w-full items-center align-middle shadow-lg bg-[#0F4C75] fixed sticky top-0 z-50 text-[#BBE1FA]">
             <div class="py-3 mx-auto w-4/5 flex justify-between">
                 <div class="flex align-middle items-center">
-                    <h1 class="font-[Poppins] font-bold text-2xl">Company LTD.</h1>
+                    <h1 class="font-[Poppins] font-bold text-2xl cursor-pointer group hover:text-white">
+                        Company LTD.
+                        <p class="max-w-0 group-hover:max-w-full h-0.5 bg-white transition-all duration-200"></p>
+                    </h1>
                 </div>
                 <ul class="flex align-middle items-center font-[Poppins]">
                     <li class="px-3 py-2 group">
@@ -75,8 +78,11 @@
         </nav>
     </header>
     <main class="relative w-full h-full">
-        <section class="flex items-center w-full h-screen bg-gray-200">
-            <div class="flex justify-around w-1/2 h-1/2 mx-auto my-5 rounded-3xl bg-white">
+        <section 
+            class="flex flex-col justify-around items-center w-screen h-screen bg-gray-200 bg-cover bg-fixed" 
+            style="background-image: url('./imgs/home-bg.jpg')"
+        >
+            <div class="flex justify-around w-1/2 h-1/2 mx-auto my-5 rounded-3xl bg-gray-200">
                 <img class="w-1/2 h-auto" src="./imgs/home.svg" alt="business problems?">
                 <div class="my-5">
                     <h1 class="font-bold text-3xl text-[#0F4C75] text-center">
@@ -96,10 +102,15 @@
                     </div>
                 </div>
             </div>
+            <div
+                class="rounded-full border border-[#0F4C75] bg-[#BBE1FA] px-5 py-5 font-bold text-3xl text-[#0F4C75] animate-bounce w-6 h-6 cursor-pointer bg-cover bg-no-repeat"
+                style="background-image: url('./imgs/down-arrow.png')"
+            >
+            </div>
         </section>
         <section class="w-3/5 mx-auto bg-gray-200 h-screen">
             <div id="about" class="flex flex-col items-center justify-around align-middle w-4/5 mx-auto">
-                <h1 class="font-bold text-3xl font-[Poppins] underline text-center mt-5">About Us</h1>
+                <h1 class="font-bold text-3xl text-[#0F4C75] font-[Poppins] underline text-center mt-5">About Us</h1>
                 <p class="text-md mt-5 font-sans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde facere error soluta iure sint blanditiis explicabo temporibus id? Nihil quos at dolorum perspiciatis maiores omnis? Rem saepe voluptatem illum eveniet.</p>
             </div>
             <div id="services" class="mt-5">
@@ -107,7 +118,6 @@
                 <div class="w-3/5 h-3/5 mx-auto my-5">
                     <div class="flex justify-evently">
                         <img class="px-2 py-2 h-64 w-full bg-white rounded-3xl mr-10 shadow-lg" src="./imgs/service_1.svg" alt="Web Design">
-                        
                         <div class="flex flex-col">
                             <h1 class="font-[Poppins] font-bold text-[#0F4C75] text-3xl underline">Design Your Website Ideas</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit dolore quasi sapiente tempora, magni suscipit itaque nisi voluptatum sit officiis consequuntur voluptate alias laborum dicta ipsam recusandae, voluptatibus aliquam.</p>
